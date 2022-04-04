@@ -1,0 +1,24 @@
+﻿<Window x:Class="_1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Image Margin="10,10,627,265" Source="/43f30380bc7c932a355bb5521c1f1231.jpg" Stretch="Fill"/>
+        <Label Content="Список клиентов" HorizontalAlignment="Left" Margin="178,10,0,0" VerticalAlignment="Top" Height="81" Width="370" FontSize="36"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,174,355,54"/>
+        <TextBox HorizontalAlignment="Left" Margin="450,169,0,0" TextWrapping="Wrap" Text="Поиск&#xA;" VerticalAlignment="Top" Width="206"  Height="27" FontSize="16"/>
+        <Button Content="Найти" HorizontalAlignment="Left" Margin="661,169,0,0" VerticalAlignment="Top" Height="27" Width="129" FontSize="16"/>
+        <Label Content="Добавить нового клиента" HorizontalAlignment="Left" Margin="450,201,0,0" VerticalAlignment="Top" Width="340" Height="43" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="450,241,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="342" Height="34" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="450,275,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="342" Height="34" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="450,309,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="342" Height="34" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="450,343,0,0" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top" Width="342" Height="34" FontSize="20" />
+        <Button Content="Удалить клиента" HorizontalAlignment="Left" Margin="10,380,0,0" VerticalAlignment="Top" Height="44" Width="435" FontSize="20"/>
+        <Button Content="Добавить нового&#xA; менеджера" HorizontalAlignment="Left" Margin="641,10,0,0" VerticalAlignment="Top" Height="75" Width="151"  FontSize="18"/>
+        <Button Content="Добавить нового клиента" HorizontalAlignment="Left" Margin="445,380,0,0" VerticalAlignment="Top" Height="44" Width="347" FontSize="20" />
+    </Grid>
+</Window>
